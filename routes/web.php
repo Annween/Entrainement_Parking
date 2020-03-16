@@ -20,3 +20,14 @@ Route::post('contact', 'ContactsController@store')->name('contact.store');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/reservation', function () {
+    return view('reservation');
+});
+
+    Route::get('/login_page', function () {
+        return view('login_page');
+
+
+
+});

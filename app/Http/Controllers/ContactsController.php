@@ -20,6 +20,6 @@ class ContactsController extends Controller
         $contact->email = $request->email;
         $contact->message = $request->message;
         $contact->save();
-        return "C'est bien enregistré !";
+        return " Merci ! Votre message a bien été transmis aux administrateurs, nous reviendrons vers vous très prochainement.";
     }
 }
