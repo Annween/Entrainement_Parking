@@ -2,29 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6acdbe6b-5ee6-49a4-b62d-70c30f157fff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/LigueController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/PlaceController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ReservationController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Ligue.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Listeners/login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Place.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/reservation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_15_132902_create_place_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_15_144716_create_reservation_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_15_152134_create_ligues_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/login_page.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/reservation.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Entrainement_Parking.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Entrainement_Parking.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/ForgotPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ForgotPasswordController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ContactsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ContactsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/template.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/template.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/VerificationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/VerificationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ReservationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ReservationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/reservation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/reservation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_15_144716_create_reservation_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_16_135730_create_reservation_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/reservation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reservation.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -54,6 +42,11 @@
     <select />
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Annween &lt;49524082+annween@users.noreply.github.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpTemplates">
@@ -148,6 +141,9 @@
       <path value="$PROJECT_DIR$/vendor/league/flysystem" />
       <path value="$PROJECT_DIR$/vendor/league/commonmark" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
     </include_path>
   </component>
   <component name="ProjectId" id="1Yybo1q7ORg0aUIRvUBq7ePF44a" />
@@ -164,7 +160,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PPE_Parking" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunManager">
@@ -192,8 +188,19 @@
       <workItem from="1584106891768" duration="895000" />
       <workItem from="1584274510406" duration="2696000" />
       <workItem from="1584278649379" duration="10696000" />
-      <workItem from="1584344559829" duration="12830000" />
+      <workItem from="1584344559829" duration="23772000" />
+      <workItem from="1584519019623" duration="3742000" />
+      <workItem from="1584949057825" duration="20000" />
+      <workItem from="1584949135744" duration="3440000" />
     </task>
+    <task id="LOCAL-00001" summary="&#10;- ADD Parking datatables &#10;-Add reservation possibility&#10;- add contact page">
+      <created>1584360086033</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1584360086033</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,24 +208,39 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="&#10;- ADD Parking datatables &#10;-Add reservation possibility&#10;- add contact page" />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;- ADD Parking datatables &#10;-Add reservation possibility&#10;- add contact page" />
   </component>
   <component name="WindowStateProjectService">
     <state x="233" y="0" key="#Inspections" timestamp="1584346455025">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="233" y="0" key="#Inspections/0.0.1280.680@0.0.1280.680" timestamp="1584346455025" />
+    <state x="1120" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1584949068998">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1120" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584949068998" />
     <state x="395" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1584286039317">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="395" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.680@0.0.1280.680" timestamp="1584286039317" />
+    <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1584363511234">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584363511234" />
     <state x="635" y="0" width="645" height="680" key="#migrations" timestamp="1584278739801">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="635" y="0" width="645" height="680" key="#migrations/0.0.1280.680@0.0.1280.680" timestamp="1584278739801" />
-    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1584125410880">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1584360084637">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584360084637" />
+    <state x="632" y="145" key="FileChooserDialogImpl" timestamp="1584953313645">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1584125410880" />
+    <state x="632" y="145" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1584953313645" />
     <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1584107791473">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\place;
 use App\reservation;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class ReservationController extends Controller
 {
@@ -14,7 +16,7 @@ class ReservationController extends Controller
      */
     public function index()
     {
-        //
+
     }
 
     /**
@@ -24,7 +26,8 @@ class ReservationController extends Controller
      */
     public function create()
     {
-        //
+        // on crée une réservation
+        return view('reservation');
     }
 
     /**
@@ -35,7 +38,16 @@ class ReservationController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $place = place::where('num_place',0)->get('id');
+        reservation::create([
+            'users_id'=>Auth::user()->id,
+           'place_id'=>$place[0]->id,
+            'date_debut'=>request('date_debut'),
+            'date_fin'=>request('date_fin'),
+            'type_vehicule'=>request('type_vehicule'),
+            'num_immat'=>request('num_immat'),
+            'PMR'=>request('PMR')
+        ]);
     }
 
     /**
@@ -46,7 +58,7 @@ class ReservationController extends Controller
      */
     public function show(reservation $reservation )
     {
-        //
+
     }
 
     /**
@@ -57,7 +69,7 @@ class ReservationController extends Controller
      */
     public function edit(reservation $reservation)
     {
-        //
+
     }
 
     /**
@@ -69,7 +81,9 @@ class ReservationController extends Controller
      */
     public function update(Request $request, reservation $reservation)
     {
-        //
+        $reservation->update($request->all());
+
+
     }
 
     /**

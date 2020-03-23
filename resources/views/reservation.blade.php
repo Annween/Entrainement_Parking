@@ -1,16 +1,7 @@
 @extends('template')
+@extends('layouts.app')
 
 
-<div class="flex-center position-ref full-height">
-    @if (Route::has('login'))
-        <div class="top-right links">
-            @auth
-                <a href="{{ url('/home') }}">Home</a>
-            @else
-                <a href="{{ route('login') }}">Login</a>
-            @endauth
-        </div>
-        @endif
 
 @section('contenu')
     {{ csrf_field() }}
@@ -19,30 +10,31 @@
 
             <div class="container">
             @yield('contenu')
-                <form action="/reservation" method="post">
+                <form action="{{ route('reservation.store') }}" method="POST">
+                    @csrf
 
                         <div class="form-group">
                             <label for="date1">Du</label>
-                            <input type="date" class="form-control" id="date1" >
+                            <input type="date" class="form-control" id="date1" value="{{ old('date_debut') }} >
                         </div>
                         <div class="form-group">
                             <label for="date2">Jusqu'au</label>
-                            <input type="date" class="form-control" id="date2" >
+                            <input type="date" class="form-control" id="date2" value="{{ old('date_fin') }}">
                         </div>
 
                         <div class="form-group">
                             <label for="inputAddress2">Type Véhicule</label>
-                            <input type="text" class="form-control" id="TypeV" placeholder="ex: Clio 320">
+                            <input type="text" class="form-control" id="TypeV" placeholder="ex: Clio 320" value="{{ old('type_vehicule') }}">
                         </div>
 
                     <div class="form-group">
                         <label for="Immat">N° Plaque</label>
-                        <input type="text" class="form-control" id="Immat" placeholder="XX-XXX-XX">
+                        <input type="text" class="form-control" id="Immat" placeholder="XX-XXX-XX" value="{{ old('num_immat') }}">
                     </div>
 
                         <div class="form-group">
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <input class="form-check-input" type="checkbox" id="gridCheck" value="{{ old('PMR') }}">
                                 <label class="form-check-label" for="gridCheck">
                                     Carte de stationnement handicapé
                                 </label>

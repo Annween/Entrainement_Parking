@@ -25,6 +25,11 @@ class CreateReservationTable extends Migration
                 ->onDelete('cascade');
             $table->date('date_debut');
             $table->date('date_fin');
+            $table->string('type_vehicule');
+            $table->string('num_immat');
+            $table->boolean('PMR');
+
+
             $table->timestamps();
         });
     }
