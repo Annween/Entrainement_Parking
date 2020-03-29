@@ -24,4 +24,16 @@ class UserController extends Controller
     {
         //
     }
+
+    public function edit(User $user)
+    {
+        $this->authorize('update', $user);
+        return 'Formulaire pour modifier';
+    }
+    public function update(Request $request, User $user)
+    {
+        $this->authorize('update', $user);
+
+        return 'Ok on a modifié !';
+    }
 }

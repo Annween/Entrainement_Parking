@@ -15,9 +15,9 @@ class CreatePlaceTable extends Migration
     {       Schema::create('places', function (Blueprint $table) {
         $table->increments('id');
         $table->integer('num_place');
-        $table->boolean('etat_place');
-        $table->timestamps();
-        });
+        $table->boolean('disponible');
+
+    });
     }
 
     /**
