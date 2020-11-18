@@ -1,5 +1,7 @@
 Projet Parking dans le cadre de la matière de PPE du BTS SIO option SLAM. Création d'une application web permettant les membres de la M2L de réaliser une demande de réservation d'une place de parking. L'application sera coder en utilisant le framework Laravel et sur le serveur Wamp64.
 
+Version finale ici : https://github.com/ganind/PPE_Parking
+
 
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
